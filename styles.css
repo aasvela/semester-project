@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Ranchers Regular";
+    src: url(fonts/Ranchers-Regular.ttf) format("woff2");
+
+}
+@font-face {
+    font-family: "Raleway SemiBold";
+    src: url(fonts/Raleway-SemiBold.ttf) format("woff2");
+}
+
+html, body {
+    height: 100%;
+}
+    
+h1 {
+    font-family: "Ranchers Regular";
+    color: #0B3A40;
+}
+p , a {
+    font-family: "Raleway SemiBold";
+}
+
+header {
+    background-color: #9FCFE6;
+    display: grid;
+    grid-template-areas: 
+    'header_h1 header_icon'
+    'header_list header_list'
+    ;
+    /*max-height: auto;*/
+
+}
+header a {
+        text-decoration: none;
+}
+header h1 {
+    font-size: 6em;
+    padding-left: 20px;
+    text-align: center;
+    grid-area: header_h1;
+}
+.h1_color1 {
+    color: #433737;
+}
+.h1_color2 {
+    color: #FF8C1A
+}
+.h1_color3 {
+    color: #6819C2 
+}
+.header_icon {
+    height: 10vw;
+    width: 10vw;
+    /*max-width: 200px;
+    max-height: 200px;
+    min-width: 50px;
+    min-height: 50px;*/
+    display: block;
+    margin: auto;
+    margin-left: 10px;
+    grid-area: header_icon;
+    border: solid;
+    
+}
+.header_list {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header_list; 
+    border: solid;
+}
+.header_list li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1em;
+}
+@media only screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 7vw;
+        padding-left: 20px;
+        text-align: left;
+        margin-right: 0px;
+    }
+    .header_icon {
+        height: 10vw;
+        width: 10vw;
+        margin-left: 5px;
+    }
+    .header_list li {
+        font-size: 2vw;
+    }
+        
+}
+body {
+    background-color: #EFF9FB;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 0 auto;
+}
+.pink-box-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    max-height: 500px;
+    background-color: #EBC4E3;
+    border-style: solid;
+    border-color: #184FD1;
+    flex-wrap: wrap;
+}
+.index-img {
+    max-width: 300px;
+    max-height: 400px;
+}
+.footer {
+    flex-shrink: 0;
+    margin-top: auto;
+}
+footer {
+    background-color: #9FCFE6;
+}
