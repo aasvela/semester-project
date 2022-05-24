@@ -22,7 +22,7 @@ The page is built with the following
 Clone the repo:
 
 ```bash
-https://github.com/aasvela/rainydays_arne.git
+[https://github.com/aasvela/semester-project.git]
 ```
 
 
